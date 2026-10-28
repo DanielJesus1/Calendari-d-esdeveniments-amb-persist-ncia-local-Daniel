@@ -129,8 +129,8 @@ nextBtn.addEventListener('click', () => {
  */
 function selectDate(dateKey, element) {
   // TODO 1: Elimina la classe .selected de tots els dies (.day)
-   const allDays = document.querySelectorAll('day');
-   allDays.forEach(day => day.classList.remove('selected'));
+  const allDays = document.querySelectorAll('.day');
+  allDays.forEach(day => day.classList.remove('selected'));
   
   // TODO 2: Afegeix la classe .selected al dia clicat i actualitza 'selectedDateKey'
   if (element) {
@@ -262,8 +262,8 @@ function sendNotification(title, body) {
 }
 
 // TODO: Escoltador d'esdeveniment per a 'notifyBtn' (Sol·licitar permisos de notificació)
-notifyBtn.Btn.addEventListener('click', async() => {
- if (!('Notification' in window)){
+notifyBtn.addEventListener('click', async () => {
+if (!('Notification' in window)){
   alert('Aquest navegador no suporta notificacions al sistema');
   return;
  }
